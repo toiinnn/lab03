@@ -5,11 +5,10 @@ APPDIR = application
 OBJDIR = build
 
 CC = g++
-CFLAGS = -O2 -Wall -std=c++14 -pedantic -I $(INCLUDEDIR)
-LDFLAGS =
+CFLAGS = -g -O0 -Wall -std=c++14 -pedantic -I $(INCLUDEDIR)
 
 BIN = ${BINDIR}/loja
-APP = ${APPDIR}/loja.cpp
+APP = ${APPDIR}/main.cpp
 
 SRC = $(wildcard $(SRCDIR)/*.cpp)
 OBJS = $(patsubst $(SRCDIR)/%.cpp,$(OBJDIR)/%.o,$(SRC))

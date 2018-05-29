@@ -1,13 +1,23 @@
+/**
+* @file roupa.h
+* @brief Cabeçalho da subclasse roupa
+* @author Antonio Marcos Oliveira
+* @since 13/05/2018
+* @date 17/05/2018
+*/
 #ifndef _ROUPA_H_
 #define _ROUPA_H_
 
 #include "produto.h"
 
+/**
+ * @brief      Class for roupa.
+ */
 class Roupa : public Produto
 {
 public:
 	Roupa();
-	Roupa(string _codigo, string _descricao, short _preco, 
+	Roupa(string _codigo, string _descricao, float _preco, 
 		  string _marca, string _sexo, string _tamanho);
 	~Roupa();
 private:
